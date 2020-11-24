@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(94, 94, 214);
+}
+.container{
+    background-color: rgb(234, 211, 248);
+    margin: 100px auto;
+    width: 30%;
+    box-shadow: 5px 5px rgb(0, 0, 0, 0.12);
+}
+li:nth-child(2n){
+    background-color: rgb(213, 248, 246);
+    border: 1px solid rgb(175, 252, 248);
+}
+h1{
+    color: white;
+    background-color: rgb(37, 37, 231);
+    height: 35px;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 2px 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.fa-plus{
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+input[type = "text"]{
+    background-color: rgb(213, 248, 246);
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 8px;
+    font-weight: bold;
+    display: none;
+}
+input:focus{
+    outline: none;
+    background-color: rgb(241, 235, 235);
+    border: 3px solid blue;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding: 3px 0px;
+}
+li:hover{
+    cursor: pointer;
+}
+span{
+    background-color: rgb(230, 46, 46);
+    display: inline-block;
+    width: 0px;
+    /* height: 40px; */
+    padding: 4px;
+    margin-right: 20px;
+    text-align: center;
+    opacity: 0;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+}
+li:hover span{
+    width: 20px;
+    opacity: 1;
+}
+
+
+/* class added by JS */
+.completed{
+    color: gray;
+    text-decoration: line-through;
+}
